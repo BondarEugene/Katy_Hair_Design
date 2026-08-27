@@ -46,6 +46,10 @@ body {
     background-color: $color-white;
   }
 
+  &__portfolio {
+    background-color: $color-dark;
+  }
+
   &__communication {
     background-color: $color-pink;
   }
@@ -366,6 +370,7 @@ body {
 
   &__items {
     display: flex;
+    align-items: stretch;
   }
 }
 
@@ -375,8 +380,10 @@ body {
   &__row {
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
+    flex: 1;
     padding: 16px;
+    max-width: 274px;
+    height: 100%;
     &:not(:last-child) {
       margin: 0 32px 0 0;
     }
@@ -400,6 +407,7 @@ body {
     font-weight: 700;
     line-height: 130%;
     color: $color-dark;
+    min-height: 70px;
   }
 
   // .item__subtitle
@@ -409,7 +417,84 @@ body {
     font-weight: 400;
     line-height: 150%;
     color: $color-dark;
+    margin-top: auto;
   }
+}
+
+//portfolio
+
+.portfolio {
+  // .portfolio__header
+
+  &__header {
+    padding: 50px 124px;
+  }
+
+  // .portfolio__title
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 150%;
+    color: $color-white;
+    text-align: center;
+    margin: 0 0 24px 0;
+  }
+
+  // .portfolio__subtitle
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    color: $color-white;
+  }
+
+  // .portfolio__grid
+
+  &__grid {
+    // display: flex;
+  }
+}
+
+.swiper {
+  max-width: 500px;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.portfolio-card {
+  // .portfolio-card__preview
+
+  &__preview {
+    // display: flex;
+    // justify-content: center;
+    margin: 0 auto 50px;
+    overflow: hidden;
+    border-radius: 12px;
+    width: 300px;
+    height: 400px;
+
+    & video {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.swiper-button-prev {
+  --swiper-navigation-size: 64px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: #fff;
+}
+.swiper-button-next {
+  --swiper-navigation-size: 64px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: #fff;
 }
 
 // communication

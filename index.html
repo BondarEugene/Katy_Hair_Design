@@ -11,6 +11,10 @@
     <link rel="shortcut icon" href="./image/img/shortcut.jpg" />
     <title>Hairworks</title>
     <link rel="stylesheet" href=".//css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -28,7 +32,9 @@
                     <li class="list-header__item">
                       <a href="#services">Послуги</a>
                     </li>
-                    <li class="list-header__item"><a href="#">Портфоліо</a></li>
+                    <li class="list-header__item">
+                      <a href="#portfolio">Портфоліо</a>
+                    </li>
                     <li class="list-header__item">
                       <a href="#communication">Записатися</a>
                     </li>
@@ -46,14 +52,14 @@
             <section class="greetings__content">
               <div class="greetings__info info-greetings">
                 <div class="info-greetings__prevtitle">
-                  Майстер з реконструкції волосся
+                  Експерт з відновлення волосся
                 </div>
                 <div class="info-greetings__title">Вітаю, я</div>
                 <div class="info-greetings__title">Катерина Садовська</div>
                 <div class="info-greetings__subtitle">
-                  Ласкаво прошу на мій сайт з реконструкції волосся. Тут ви
-                  можете ознайомитися з моїм досвідом у сфері реконструкції
-                  волосся та записатися на процедуру.
+                  Допомагаю повернути волоссю силу, здоровʼя та природну красу
+                  за допомогою ефективних протоколів відновлення. Ознайомтесь з
+                  моїм досвідом, роботами та оберіть послугу для себе.
                 </div>
                 <div class="info-greetings__buttons button-info">
                   <button class="button-info__item">
@@ -81,16 +87,17 @@
               </div>
               <div class="about__subtitle">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque sunt mollitia ipsa recusandae quas. Placeat
-                  exercitationem aut nemo eligendi ullam explicabo doloremque
-                  quis enim totam autem eos quod, consectetur atque.
+                  Я Катерина Садовська — майстер з реконструкції та модифікації
+                  волосся. Моя спеціалізація — професійний догляд, реконструкція
+                  та модифікація волосся з індивідуальним підбором процедури.
+                  Тут ви можете ознайомитися з моїм досвідом, процедурами та
+                  результатами роботи.
                 </p>
               </div>
               <div class="about__experience experience-about">
                 <div class="experience-about__row">
                   <div class="experience-about__title">
-                    <h1>205</h1>
+                    <h1>200+</h1>
                   </div>
                   <div class="experience-about__subtitle">
                     <p>Щасливі клієнти</p>
@@ -126,10 +133,8 @@
               </div>
               <div class="services__subtitle">
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-                  vel voluptatem incidunt rem fugiat molestiae minima iure amet
-                  praesentium ipsum nobis at reiciendis quia, eaque officiis
-                  voluptatibus temporibus, nostrum quae!
+                  Кожне волосся потребує свого рішення. Підбираю процедуру
+                  індивідуально під його стан, структуру та потреби.
                 </p>
               </div>
               <div class="services__items item">
@@ -140,12 +145,11 @@
                       alt="dryer"
                     />
                   </div>
-                  <div class="item__title">Кератин</div>
+                  <div class="item__title">Кератинове вирівнювання</div>
                   <div class="item__subtitle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Corporis numquam laudantium, deserunt suscipit voluptatem
-                    natus officia, laborum ipsum adipisci doloribus sit quas
-                    modi neque fuga distinctio quo asperiores sint magnam.
+                    Глибоке розгладження та реконструкція волосся, що допомагає
+                    зменшити пухнастість, надати гладкість, блиск і доглянутий
+                    вигляд.
                   </div>
                 </div>
 
@@ -153,12 +157,11 @@
                   <div class="item__icon">
                     <img src="./image/icons/services/hair.svg" alt="hair" />
                   </div>
-                  <div class="item__title">Ботокс</div>
+                  <div class="item__title">Гарячий ботокс для волосся</div>
                   <div class="item__subtitle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Corporis numquam laudantium, deserunt suscipit voluptatem
-                    natus officia, laborum ipsum adipisci doloribus sit quas
-                    modi neque fuga distinctio quo asperiores sint magnam.
+                    Інтенсивне відновлення та ущільнення волосся з
+                    термоактивацією. Надає гладкість, блиск, м’якість і
+                    допомагає зменшити пухнастість.
                   </div>
                 </div>
 
@@ -169,12 +172,12 @@
                       alt="cuts"
                     />
                   </div>
-                  <div class="item__title">Тотальна реконструкція</div>
+                  <div class="item__title">Нанопластика</div>
                   <div class="item__subtitle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Corporis numquam laudantium, deserunt suscipit voluptatem
-                    natus officia, laborum ipsum adipisci doloribus sit quas
-                    modi neque fuga distinctio quo asperiores sint magnam.
+                    Процедура для глибокого розгладження та модифікації
+                    структури волосся. Зменшує пухнастість і об’єм, дисциплінує
+                    волосся та забезпечує тривалий ефект гладкості, блиску й
+                    шовковистості.
                   </div>
                 </div>
 
@@ -182,30 +185,97 @@
                   <div class="item__icon">
                     <img src="./image/icons/services/cold.svg" alt="pusy" />
                   </div>
-                  <div class="item__title">Холодне відновлення</div>
+                  <div class="item__title">Тотальна реконструкція волосся</div>
                   <div class="item__subtitle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Corporis numquam laudantium, deserunt suscipit voluptatem
-                    natus officia, laborum ipsum adipisci doloribus sit quas
-                    modi neque fuga distinctio quo asperiores sint magnam.
+                    Глибоке відновлення сильно пошкодженого волосся. Допомагає
+                    покращити структуру, ущільнити волосся, повернути м’якість,
+                    гладкість та здоровий вигляд.
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </secrion>
-        <!-- <section class="portfolio">
+        <section class="content__portfolio portfolio" id="portfolio">
           <div class="portfolio__container container">
             <div class="portfolio__header">
-              <h2 class="portfolio__title">SOme text</h2>
-              <p class="portfolio__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam modi odio ducimus, dolorum molestias doloribus nemo voluptates saepe atque odit natus laborum. Officia neque soluta fugit quia dolor quis necessitatibus!</p>
+              <h2 class="portfolio__title">Портфоліо</h2>
+              <p class="portfolio__subtitle">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+                modi odio ducimus, dolorum molestias doloribus nemo voluptates
+                saepe atque odit natus laborum. Officia neque soluta fugit quia
+                dolor quis necessitatibus!
+              </p>
             </div>
 
-            <div class="portfolio__grid">
-
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="portfolio__grid">
+                    <article class="portfolio-card">
+                      <div class="portfolio-card__preview">
+                        <video autoplay muted playsinline controls loop>
+                          <source
+                            src="./video/portfolio/IMG_2789.MP4"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__grid">
+                    <article class="portfolio-card">
+                      <div class="portfolio-card__preview">
+                        <video autoplay muted playsinline controls loop>
+                          <source
+                            src="./video/portfolio/2.MP4"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__grid">
+                    <article class="portfolio-card">
+                      <div class="portfolio-card__preview">
+                        <video autoplay muted loop playsinline controls>
+                          <source
+                            src="./video/portfolio/3.MOV"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__grid">
+                    <article class="portfolio-card">
+                      <div class="portfolio-card__preview">
+                        <video autoplay muted playsinline controls loop>
+                          <source
+                            src="./video/portfolio/4.MOV"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <!-- <div class="swiper-slide">Slide 3</div> -->
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
-        </section> -->
+        </section>
         <section
           class="content__communication communication"
           id="communication"
@@ -366,5 +436,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
