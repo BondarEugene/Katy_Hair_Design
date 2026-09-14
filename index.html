@@ -19,7 +19,7 @@
   <body>
     <div class="wrapper">
       <main class="content">
-        <section class="content__greetings greetings">
+        <section class="content__greetings greetings" id="greetings">
           <div class="greetings__container container">
             <header class="greetings__header header-greetings">
               <div class="header-greetings__row" id="header">
@@ -125,7 +125,7 @@
             </div>
           </div>
         </section>
-        <secrion class="content__services services" id="services">
+        <section class="content__services services" id="services">
           <div class="services__container container">
             <div class="services__body">
               <div class="services__title">
@@ -195,7 +195,7 @@
               </div>
             </div>
           </div>
-        </secrion>
+        </section>
         <section class="content__portfolio portfolio" id="portfolio">
           <div class="portfolio__container container">
             <div class="portfolio__header">
@@ -324,29 +324,29 @@
                   </div>
                 </div>
                 <div class="info-comm__links link">
-                  <div class="link__item">
-                    <a
-                      href="https://www.instagram.com/katyahair.kh?igsi=MXhtZzRram5uYm90eg=="
-                      target="_blank"
-                      ><img
-                        src="./image/icons/communication/links/insta.svg"
-                        alt="insta"
-                    /></a>
-                  </div>
-                  <div class="link__item">
-                    <a href="https://t.me/katyouXAN" target="_blank"
-                      ><img
-                        src="./image/icons/communication/links/telegram-svgrepo-com.svg"
-                        alt="telegram"
-                    /></a>
-                  </div>
-                  <div class="link__item">
-                    <a href="#"
-                      ><img
-                        src="./image/icons/communication/links/whatsapp-svgrepo-com.svg"
-                        alt="whatsapp"
-                    /></a>
-                  </div>
+                  <a
+                    class="link__item"
+                    href="https://www.instagram.com/katyahair.kh?igsi=MXhtZzRram5uYm90eg=="
+                    target="_blank"
+                    ><img
+                      src="./image/icons/communication/links/insta.svg"
+                      alt="insta"
+                  /></a>
+
+                  <a
+                    class="link__item"
+                    href="https://www.instagram.com/katyahair.kh?igsi=MXhtZzRram5uYm90eg=="
+                    target="_blank"
+                    ><img
+                      src="./image/icons/communication/links/telegram-svgrepo-com.svg"
+                      alt="telegram"
+                  /></a>
+
+                  <a class="link__item" href="#" target="_blank"
+                    ><img
+                      src="./image/icons/communication/links/whatsapp-svgrepo-com.svg"
+                      alt="whatsapp"
+                  /></a>
                 </div>
               </div>
 
@@ -408,7 +408,9 @@
                 <a href="#about">Про мене</a>
                 <a href="#services">Послуги</a>
               </div>
-              <h1 class="footer__title">KS HAIRSTUDIO</h1>
+              <h1 class="footer__title">
+                <a href="#greetings">KS HAIRSTUDIO</a>
+              </h1>
               <div class="footer__body-links">
                 <a href="#portfolio">Потрфоліо</a>
                 <a href="#communication">Записатися</a>

@@ -554,12 +554,18 @@ body {
   font-size: 36px;
   font-weight: 600;
   line-height: 150%;
-  color: #fc3314;
   margin: 0 120px;
+  transition: transform 0.5s ease;
 }
 .footer__title::first-letter {
   color: #ffffff;
   letter-spacing: -0.25em;
+}
+.footer__title a {
+  color: #fc3314;
+}
+.footer__title:hover {
+  transform: translateY(-4px) scale(1.02);
 }
 .footer__follow {
   font-size: 16px;

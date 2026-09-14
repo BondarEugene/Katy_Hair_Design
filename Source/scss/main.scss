@@ -712,11 +712,20 @@ body {
     font-size: 36px;
     font-weight: 600;
     line-height: 150%;
-    color: $color-red;
     margin: 0 120px;
+    transition: transform 0.5s ease;
+
     &::first-letter {
       color: $color-white;
       letter-spacing: -0.25em;
+    }
+
+    & a {
+      color: $color-red;
+    }
+
+    &:hover {
+      transform: translateY(-4px) scale(1.02);
     }
   }
 
