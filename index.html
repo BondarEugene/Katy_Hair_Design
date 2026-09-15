@@ -27,16 +27,18 @@
                 <div class="header-greetings__list list-header">
                   <ul class="list-header__body">
                     <li class="list-header__item">
-                      <a href="#about">Про мене</a>
+                      <a href="#about" aria-label="about me">Про мене</a>
                     </li>
                     <li class="list-header__item">
-                      <a href="#services">Послуги</a>
+                      <a href="#services" aria-label="services">Послуги</a>
                     </li>
                     <li class="list-header__item">
-                      <a href="#portfolio">Портфоліо</a>
+                      <a href="#portfolio" aria-label="portfolio">Портфоліо</a>
                     </li>
                     <li class="list-header__item">
-                      <a href="#communication">Записатися</a>
+                      <a href="#communication" aria-label="communication"
+                        >Записатися</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -44,6 +46,7 @@
                   <a
                     href="https://www.instagram.com/katyahair.kh?igsi=MXhtZzRram5uYm90eg=="
                     target="_blank"
+                    aria-label="instagram"
                     >Instagram</a
                   >
                 </button>
@@ -63,10 +66,12 @@
                 </div>
                 <div class="info-greetings__buttons button-info">
                   <button class="button-info__item">
-                    <a href="#communication">Запишись</a>
+                    <a href="#communication" aria-label="communication"
+                      >Запишись</a
+                    >
                   </button>
                   <button class="button-info__item">
-                    <a href="#portfolio">Мої роботи</a>
+                    <a href="#portfolio" aria-label="portfolio">Мої роботи</a>
                   </button>
                 </div>
               </div>
@@ -217,7 +222,14 @@
                   <div class="portfolio__grid">
                     <article class="portfolio-card">
                       <div class="portfolio-card__preview">
-                        <video autoplay muted playsinline controls loop>
+                        <video
+                          autoplay
+                          muted
+                          playsinline
+                          controls
+                          loop
+                          aria-label="My works_portfolio"
+                        >
                           <source
                             src="./video/portfolio/IMG_2789.MP4"
                             type="video/mp4"
@@ -231,7 +243,14 @@
                   <div class="portfolio__grid">
                     <article class="portfolio-card">
                       <div class="portfolio-card__preview">
-                        <video autoplay muted playsinline controls loop>
+                        <video
+                          autoplay
+                          muted
+                          playsinline
+                          controls
+                          loop
+                          aria-label="My works_portfolio"
+                        >
                           <source
                             src="./video/portfolio/2.MP4"
                             type="video/mp4"
@@ -245,7 +264,14 @@
                   <div class="portfolio__grid">
                     <article class="portfolio-card">
                       <div class="portfolio-card__preview">
-                        <video autoplay muted loop playsinline controls>
+                        <video
+                          autoplay
+                          muted
+                          loop
+                          playsinline
+                          controls
+                          aria-label="My works_portfolio"
+                        >
                           <source
                             src="./video/portfolio/3.MOV"
                             type="video/mp4"
@@ -259,7 +285,14 @@
                   <div class="portfolio__grid">
                     <article class="portfolio-card">
                       <div class="portfolio-card__preview">
-                        <video autoplay muted playsinline controls loop>
+                        <video
+                          autoplay
+                          muted
+                          playsinline
+                          controls
+                          loop
+                          aria-label="My works_portfolio"
+                        >
                           <source
                             src="./video/portfolio/4.MOV"
                             type="video/mp4"
@@ -328,6 +361,8 @@
                     class="link__item"
                     href="https://www.instagram.com/katyahair.kh?igsi=MXhtZzRram5uYm90eg=="
                     target="_blank"
+                    title="instagram"
+                    aria-label="instagram"
                     ><img
                       src="./image/icons/communication/links/insta.svg"
                       alt="insta"
@@ -337,12 +372,19 @@
                     class="link__item"
                     href="https://www.instagram.com/katyahair.kh?igsi=MXhtZzRram5uYm90eg=="
                     target="_blank"
+                    title="telegram"
+                    aria-label="telegram"
                     ><img
                       src="./image/icons/communication/links/telegram-svgrepo-com.svg"
                       alt="telegram"
                   /></a>
 
-                  <a class="link__item" href="#" target="_blank"
+                  <a
+                    class="link__item"
+                    href="#"
+                    target="_blank"
+                    title="whatsapp"
+                    aria-label="whatsapp"
                     ><img
                       src="./image/icons/communication/links/whatsapp-svgrepo-com.svg"
                       alt="whatsapp"
@@ -405,15 +447,17 @@
           <div class="footer__body">
             <div class="footer__content">
               <div class="footer__body-links">
-                <a href="#about">Про мене</a>
-                <a href="#services">Послуги</a>
+                <a href="#about" aria-label="about">Про мене</a>
+                <a href="#services" aria-label="services">Послуги</a>
               </div>
               <h1 class="footer__title">
-                <a href="#greetings">KS HAIRSTUDIO</a>
+                <a href="#greetings" aria-label="greetings">KS HAIRSTUDIO</a>
               </h1>
               <div class="footer__body-links">
-                <a href="#portfolio">Потрфоліо</a>
-                <a href="#communication">Записатися</a>
+                <a href="#portfolio" aria-label="portfolio">Потрфоліо</a>
+                <a href="#communication" aria-label="communication"
+                  >Записатися</a
+                >
               </div>
             </div>
             <div class="footer__follow">Слідкуйте за мною у соцмережах:</div>
@@ -421,14 +465,20 @@
               <a
                 href="https://www.instagram.com/katyahair.kh?igsi=MXhtZzRram5uYm90eg=="
                 target="_blank"
+                title="instagram"
+                aria-label="instagram"
                 ><img src="./image/icons/footer/insta.svg" alt="instagram"
               /></a>
-              <a href="https://t.me/katyouXAN" target="_blank"
+              <a
+                href="https://t.me/katyouXAN"
+                target="_blank"
+                title="telegram"
+                aria-label="telegram"
                 ><img
                   src="./image/icons/footer/telegram-svgrepo-com.svg"
                   alt="telegram"
               /></a>
-              <a href="#"
+              <a href="#" title="whatsapp" aria-label="whatsapp"
                 ><img
                   src="./image/icons/footer/whatsapp-svgrepo-com.svg"
                   alt="whatsapp"
