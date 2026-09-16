@@ -416,26 +416,52 @@ body {
   align-items: center;
   margin: 64px 124px;
 }
+@media (max-width: 1141px) {
+  .services__body {
+    margin: 20px 124px;
+  }
+}
 .services__title h1 {
   font-size: 36px;
   font-weight: 700;
   line-height: 150%;
+}
+@media (max-width: 1141px) {
+  .services__title h1 {
+    line-height: 100%;
+    font-size: 26px;
+  }
 }
 .services__title {
   color: #1f1f1f;
   text-align: center;
   margin: 0 0 24px 0;
 }
+@media (max-width: 1141px) {
+  .services__title {
+    margin: 0 0 15px 0;
+  }
+}
 .services__subtitle p {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
+}
+@media (max-width: 1141px) {
+  .services__subtitle p {
+    font-size: 12px;
+  }
 }
 .services__subtitle {
   color: #1f1f1f;
   text-align: center;
   max-width: 810px;
   margin: 0 0 32px 0;
+}
+@media (max-width: 1141px) {
+  .services__subtitle {
+    margin: 0 0 15px 0;
+  }
 }
 .services__items {
   display: flex;
@@ -453,12 +479,28 @@ body {
 .item__row:not(:last-child) {
   margin: 0 32px 0 0;
 }
+@media (max-width: 1141px) {
+  .item__row {
+    padding: 0 16px;
+  }
+}
 .item__icon {
   margin: 0 0 24px 0;
 }
 .item__icon img {
   width: 50px;
   height: 50px;
+}
+@media (max-width: 1141px) {
+  .item__icon img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 1141px) {
+  .item__icon {
+    margin: 0 0 15px 0;
+  }
 }
 .item__title {
   margin: 0 0 24px 0;
@@ -468,6 +510,13 @@ body {
   color: #1f1f1f;
   min-height: 70px;
 }
+@media (max-width: 1141px) {
+  .item__title {
+    margin: 0;
+    font-size: 12px;
+    min-height: 50px;
+  }
+}
 .item__subtitle {
   font-size: 14px;
   font-weight: 400;
@@ -475,9 +524,19 @@ body {
   color: #1f1f1f;
   margin-top: auto;
 }
+@media (max-width: 1141px) {
+  .item__subtitle {
+    font-size: 12px;
+  }
+}
 
 .portfolio__header {
   padding: 50px 124px;
+}
+@media (max-width: 1141px) {
+  .portfolio__header {
+    padding: 20px 124px;
+  }
 }
 .portfolio__title {
   font-size: 36px;
@@ -487,12 +546,24 @@ body {
   text-align: center;
   margin: 0 0 24px 0;
 }
+@media (max-width: 1141px) {
+  .portfolio__title {
+    font-size: 26px;
+    line-height: 100%;
+    margin: 0 0 15px 0;
+  }
+}
 .portfolio__subtitle {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
   text-align: center;
   color: #ffffff;
+}
+@media (max-width: 1141px) {
+  .portfolio__subtitle {
+    font-size: 12px;
+  }
 }
 .portfolio__grid {
   cursor: auto;
@@ -515,12 +586,26 @@ body {
   height: auto;
   cursor: grab;
 }
+@media (max-width: 1141px) {
+  .portfolio-card__preview {
+    margin: 0 auto 20px;
+    width: 250px;
+    height: 350px;
+  }
+}
 
 .swiper-button-prev {
   --swiper-navigation-size: 64px;
   --swiper-navigation-top-offset: 50%;
   --swiper-navigation-sides-offset: 10px;
   --swiper-navigation-color: #fff;
+}
+@media (max-width: 1141px) {
+  .swiper-button-prev {
+    --swiper-navigation-size: 40px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 65px;
+  }
 }
 
 .swiper-button-next {
@@ -529,11 +614,23 @@ body {
   --swiper-navigation-sides-offset: 10px;
   --swiper-navigation-color: #fff;
 }
+@media (max-width: 1141px) {
+  .swiper-button-next {
+    --swiper-navigation-size: 40px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 65px;
+  }
+}
 
 .communication__body {
   padding: 124px;
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 1141px) {
+  .communication__body {
+    padding: 20px 124px;
+  }
 }
 .communication__info {
   max-width: 566px;
@@ -553,6 +650,13 @@ body {
   color: #1f1f1f;
   margin: 0 0 16px 0;
 }
+@media (max-width: 1141px) {
+  .info-comm__title {
+    font-size: 26px;
+    line-height: 100%;
+    margin: 0 0 15px 0;
+  }
+}
 .info-comm__subtitle {
   font-size: 16px;
   font-weight: 400;
@@ -560,8 +664,19 @@ body {
   color: #1f1f1f;
   margin: 0 0 64px 0;
 }
+@media (max-width: 1141px) {
+  .info-comm__subtitle {
+    font-size: 12px;
+    margin: 0 0 30px 0;
+  }
+}
 .info-comm__contacts {
   margin: 0 0 119px 0;
+}
+@media (max-width: 1141px) {
+  .info-comm__contacts {
+    margin: 0 0 24px 0;
+  }
 }
 .info-comm__links {
   display: flex;
@@ -572,6 +687,11 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0 0 32px 0;
+}
+@media (max-width: 1141px) {
+  .contacts__row {
+    margin: 0 0 15px 0;
+  }
 }
 .contacts__icon {
   margin: 0 16px 0 0;
@@ -603,11 +723,23 @@ body {
   line-height: 150%;
   color: #8d8d8d;
 }
+@media (max-width: 1141px) {
+  .form__label {
+    font-size: 10px;
+  }
+}
 .form__input {
   width: 566px;
   height: 49px;
   padding: 14px 16px;
   margin: 0 0 24px 0;
+}
+@media (max-width: 1141px) {
+  .form__input {
+    height: 20px;
+    padding: 12px;
+    margin: 0 0 15px 0;
+  }
 }
 .form__textarea {
   width: 100%;
@@ -615,6 +747,13 @@ body {
   padding: 14px 16px;
   margin: 0 0 32px 0;
   resize: none;
+}
+@media (max-width: 1141px) {
+  .form__textarea {
+    min-height: 120px;
+    padding: 12px;
+    margin: 0 0 20px 0;
+  }
 }
 .form__button {
   max-width: 233px;
@@ -629,6 +768,13 @@ body {
 .form__button:hover {
   transform: translateY(-4px) scale(1.02);
 }
+@media (max-width: 1141px) {
+  .form__button {
+    font-size: 12px;
+    max-width: 150px;
+    height: 38px;
+  }
+}
 
 .footer {
   background-color: #1f1f1f;
@@ -639,6 +785,11 @@ body {
   justify-content: center;
   align-items: center;
   margin: 80px 0;
+}
+@media (max-width: 1141px) {
+  .footer__body {
+    margin: 40px 0;
+  }
 }
 .footer__content {
   display: flex;
@@ -667,11 +818,20 @@ body {
   line-height: 150%;
   color: #ffffff;
 }
+@media (max-width: 1141px) {
+  .footer__body-links a {
+    line-height: 100%;
+    font-size: 15px;
+  }
+}
 .footer__title {
   font-size: 36px;
   font-weight: 600;
   line-height: 150%;
   margin: 0 120px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .footer__title::first-letter {
   color: #ffffff;
@@ -684,6 +844,12 @@ body {
 }
 .footer__title a:hover {
   transform: translateY(-4px) scale(1.02);
+}
+@media (max-width: 1141px) {
+  .footer__title {
+    font-size: 26px;
+    line-height: 100%;
+  }
 }
 .footer__follow {
   font-size: 16px;
