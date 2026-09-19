@@ -137,8 +137,12 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  height: 100%;
   max-width: 460px;
+}
+@media (max-width: 813px) {
+  .greetings__info {
+    justify-content: space-between;
+  }
 }
 .greetings__image {
   margin: 0 0 0 50px;
@@ -161,6 +165,12 @@ body {
   .greetings__image img {
     max-width: 270px;
     max-height: 280px;
+  }
+}
+@media (max-width: 813px) {
+  .greetings__image img {
+    max-width: 270px;
+    max-height: 210px;
   }
 }
 
@@ -193,6 +203,7 @@ body {
   font-size: 30px;
   font-weight: 600;
   color: #fc3314;
+  text-align: center;
 }
 .header-greetings__title::first-letter {
   color: #1f1f1f;
@@ -201,6 +212,11 @@ body {
 @media (max-width: 1141px) {
   .header-greetings__title {
     font-size: 25px;
+  }
+}
+@media (max-width: 813px) {
+  .header-greetings__title {
+    font-size: 20px;
   }
 }
 .header-greetings__list {
@@ -218,26 +234,37 @@ body {
     font-size: 15px;
   }
 }
+@media (max-width: 813px) {
+  .header-greetings__list {
+    font-size: 10px;
+  }
+}
 .header-greetings__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #1f1f1f;
-  max-width: 127px;
-  min-height: 48px;
-  font-size: 16px;
-  font-weight: 700;
   transition: transform 0.5s ease;
 }
 .header-greetings__button:hover {
   transform: translateY(-4px) scale(1.02);
 }
 .header-greetings__button a {
-  margin: 0 24px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 28px;
   color: #ffffff;
 }
 @media (max-width: 1141px) {
-  .header-greetings__button {
+  .header-greetings__button a {
     font-size: 12px;
-    max-width: 117px;
-    min-height: 38px;
+    padding: 10px 28px;
+  }
+}
+@media (max-width: 813px) {
+  .header-greetings__button a {
+    font-size: 10px;
+    padding: 10px 20px;
   }
 }
 
@@ -278,6 +305,12 @@ body {
     font-size: 15px;
   }
 }
+@media (max-width: 813px) {
+  .info-greetings__prevtitle {
+    font-size: 12px;
+    margin: 0 0 10px 0;
+  }
+}
 .info-greetings__title {
   padding: 0 0 10px 0;
   font-size: 48px;
@@ -290,6 +323,12 @@ body {
 @media (max-width: 1141px) {
   .info-greetings__title {
     font-size: 28px;
+  }
+}
+@media (max-width: 813px) {
+  .info-greetings__title {
+    font-size: 20px;
+    padding: 0 0 5px 0;
   }
 }
 .info-greetings__subtitle {
@@ -305,22 +344,30 @@ body {
     font-size: 12px;
   }
 }
+@media (max-width: 813px) {
+  .info-greetings__subtitle {
+    margin: 10px 0 0;
+    font-size: 10px;
+  }
+}
 .info-greetings__buttons {
   display: flex;
   align-items: center;
+  margin-top: auto;
+  padding: 0 0 20px 0;
 }
-@media (max-width: 1141px) {
+@media (max-width: 813px) {
   .info-greetings__buttons {
-    padding: 0 0 20px 0;
+    margin-top: auto;
+    padding: 10px 0;
   }
 }
 
 .button-info__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 20px 0 0;
-  width: 177px;
-  min-height: 48px;
-  font-size: 16px;
-  font-weight: 700;
   background-color: #1f1f1f;
   transition: transform 0.5s ease;
 }
@@ -331,17 +378,25 @@ body {
   background-color: #ffffff;
 }
 .button-info__item a {
+  font-size: 16px;
+  font-weight: 700;
   color: #ffffff;
+  padding: 15px 28px;
+}
+@media (max-width: 1141px) {
+  .button-info__item a {
+    font-size: 12px;
+    padding: 10px 28px;
+  }
+}
+@media (max-width: 813px) {
+  .button-info__item a {
+    font-size: 10px;
+    padding: 10px 20px;
+  }
 }
 .button-info__item:nth-child(2) a {
   color: #1f1f1f;
-}
-@media (max-width: 1141px) {
-  .button-info__item {
-    width: 127px;
-    min-height: 38px;
-    font-size: 12px;
-  }
 }
 
 .about__body {
@@ -896,11 +951,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 0 64px 0;
+  margin: 0 5px 64px;
 }
 @media (max-width: 1141px) {
   .footer__content {
-    margin: 0 0 40px 0;
+    margin: 0 5px 40px;
   }
 }
 @media (max-width: 813px) {
