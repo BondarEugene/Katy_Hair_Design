@@ -25,6 +25,20 @@
               <div class="header-greetings__row" id="header">
                 <h1 class="header-greetings__title">KS HAIRSTUDIO</h1>
                 <div class="header-greetings__list list-header">
+                  <!-- burger -->
+                  <button
+                    class="list-header__burger"
+                    type="button"
+                    aria-label="Відкрити меню"
+                    aria-expanded="false"
+                    aria-controls="navigation"
+                  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                  <!--  -->
+
                   <ul class="list-header__body">
                     <li class="list-header__item">
                       <a href="#about" aria-label="about me">Про мене</a>
@@ -50,6 +64,16 @@
                     >Instagram</a
                   >
                 </button>
+
+                <a
+                  class="header-greetings__link-remove"
+                  href="https://www.instagram.com/katyahair.kh?igsi=MXhtZzRram5uYm90eg=="
+                  target="_blank"
+                  aria-label="instagram"
+                  ><img
+                    src="./image/icons/greetings/insta_600px.svg"
+                    alt="instagram"
+                /></a>
               </div>
             </header>
             <section class="greetings__content">
@@ -400,7 +424,10 @@
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="First name"
+                    placeholder="Your name"
+                    title="Ім'я та призвище"
+                    maxlength="50"
+                    required
                   />
                 </div>
 
@@ -412,17 +439,25 @@
                     name="email"
                     placeholder="Your email"
                     class="form__input"
+                    inputmode="email"
+                    maxlength="50"
+                    required
+                    title="Ваша поштова скринька"
                   />
                 </div>
 
                 <div class="form__item">
                   <label for="number" class="form__label"></label>
                   <input
-                    type="number"
+                    type="tel"
                     id="number"
                     name="number"
                     placeholder="Phone number"
                     class="form__input"
+                    required
+                    title="Номер телефона в формате +380XXXXXXXXX"
+                    pattern="\+380[0-9]{9}"
+                    autocomplete="tel"
                   />
                 </div>
 
@@ -433,6 +468,7 @@
                     id="message"
                     placeholder="Your message"
                     class="form__textarea"
+                    title="Супровідний текст"
                   ></textarea>
                 </div>
 
@@ -492,5 +528,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/burger.js"></script>
   </body>
 </html>
