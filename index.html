@@ -434,8 +434,8 @@
                   <input
                     class="form__input"
                     type="text"
-                    id="Имя"
-                    name="Имя"
+                    id="name"
+                    name="name"
                     placeholder="Your name"
                     title="Ім'я та призвище"
                     maxlength="50"
@@ -447,8 +447,8 @@
                   <!-- <label for="email" class="form__label"></label> -->
                   <input
                     type="email"
-                    id="Почта"
-                    name="Почта"
+                    id="email"
+                    name="email"
                     placeholder="Your email"
                     class="form__input"
                     inputmode="email"
@@ -462,13 +462,14 @@
                   <!-- <label for="number" class="form__label"></label> -->
                   <input
                     type="tel"
-                    id="Номер телефона"
-                    name="Номер телефона"
+                    id="number"
+                    name="number"
                     placeholder="Phone number"
                     class="form__input"
                     required
                     title="Номер телефона в формате +380XXXXXXXXX"
                     autocomplete="tel"
+                    pattern="\+380[0-9]{9}"
                   />
                 </div>
 
