@@ -106,7 +106,7 @@
               </div>
               <div class="greetings__image">
                 <img
-                  src="./image/img/greetings/photo_2026-08-23_18-16-33.png"
+                  src="./image/img/greetings/greetings.webp"
                   alt="main photo"
                 />
               </div>
@@ -421,7 +421,13 @@
                 </div>
               </div>
 
-              <form action="#" method="post" class="communication__form form">
+              <form
+                name="communication"
+                data-netlify="true"
+                method="POST"
+                class="communication__form form"
+              >
+                <input type="hidden" name="form-name" value="communication" />
                 <div class="form__item">
                   <label for="name" class="form__label"></label>
                   <input
